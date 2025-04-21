@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Briars And Ivy</title>
+        <style>
+            h1 {
+                text-align: center;
+                font-size: 25px;
+            }
+            #linkTO-2024 {
+                font-weight: 400;
+                margin-left: 20px;
+                background-color: grey;
+                color: white;
+                padding: 15px;
+                border-radius: 25px;
+                transition: 0.85s;
+                user-select: none;
+                -webkit-user-select: none;
+                
+            }
+            #linkTO-2024:hover {
+                background-color: rgb(187, 99, 17);
+            }
+            h3 {
+                font-family: Cochin, Montserrat;
+                font-weight: 500;
+                padding-left: 20%;
+                padding-right: 20%;
+                text-align: center;
+                span {
+                    font-family: Montserrat;
+                    font-weight: 700;
+                    font-size: 30px;
+                    
+                }
+            }
+            #direct2024 {
+                @media screen and (max-width: 700px) {
+                    font-size: 17px;
+                }
+            }
+            #LXII img {
+                margin: 0 auto;
+                display: block;
+                width: 35%;
+                transition: width 2s;
+                user-select: none;
+                -webkit-user-select: none;
+            }
+            #LXII img:hover {
+                width: 38%;
+            }
+            h2 {
+                font-family: Montserrat;
+                text-align: center;
+                font-size: 35px;
+                padding-left: 15%;
+                padding-right: 15%;
+            }
+            #submit2025 {
+                padding: 20px;
+                background-color: rgb(209, 119, 2);
+                color: white;
+                img {
+                    width: 50%;
+                    margin: 0 auto;
+                    display: block;
+                    cursor: pointer;
+                }
+                @media screen and (max-width: 700px) {
+                    img {
+                        width: 80%;
+                    }
+                }
+            }
+            #boterham {
+                font-weight: 700; 
+                font-size: 15px;
+                background-color: orange;
+                padding: 20px;
+                font-family: karla;
+                border-radius: 15px;
+                transition: background-color 1.5s;
+                @media screen and (max-width: 700px) {
+                    font-size: 10px;
+                }
+            }
+            #boterham:hover {
+                background-color: rgb(225, 136, 3);
+            }
+
+            #labelDOG {
+                text-align: center;
+                font-family: Montserrat;
+            }
+
+        </style>
+        <link href="styles.css" rel="stylesheet"></link>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    </head>
+    <body id="aardbei">
+        <div id="navbar"></div>
+        <div id="mobileNav"></div>
+        <div style="height:90px"></div>
+        <div id="submit2025">
+            <h2>Submit for 2025</h2>
+            <h3 style="font-family: Montserrat; font-weight: 300;">This is your chance to become a published author/artist!
+                <br>Submit your works to Briars and Ivy today!<br><br>
+                <img src="images/doggo.001.png" id="doggo">
+                <br>
+                <span id = "boterham">
+                    Registration closes mid-April ->
+                </span>
+                <br><br><br>
+                <h4 id="labelDOG">(Click the Dog)<br><span class="material-symbols-outlined">volume_up</span></h4>
+            </h3>
+        </div>
+        <br>
+        <br>
+        <div id="LXII">
+            <h1 id="direct2024" style="font-family: Montserrat">Volume LXII | 2024 <span id="linkTO-2024">Visit Page -></span></h1>
+            <h3><span>Art</span> in its purest form, draws from the human experience. The human experience of
+                our high school artists and writers represents the culmination of growth. Every piece of art,
+                from poem to photograph to painting, comes from a teenager who is either growing up too fast
+                or not fast enough. In this magazine, we attempt to capture the essence of growth. It is a fickle
+                thing: something that disintegrates before our eyes and slips through our fingers when we hold
+                it too tight. We gain an intimate insight into the influence of childhood worldliness, memories
+                that are representative of our aspirations and a burgeoning growth that remains ubiquitous
+                throughout time. It is the unprecedented, inevitable thing that makes the human experience.
+                We, the staff of Briars and Ivy, hope that you can connect with our experiences, no matter
+                where you are on your own journey.</h3>
+                <img src="images/fallingPerson_betweenRealms.001.png">
+        </div>
+        <br>
+        <div id="footer"></div>
+        <audio id="dogBark"><source src="audio/dog-bark-type-05-293289.mp3" type="audio/mp3"></audio>
+        <!--Sound Effect by Ribhav Agrawal from Pixabay-->
+    </body>
+    <script>
+        // If visited site never, redirect to welcome page
+        if (localStorage.getItem("visited")===null) {
+            document.getElementById("aardbei").innerHTML = "<h1>Redirecting...</h1>";
+            localStorage.setItem("visited", true);
+            window.location.href = "welcome.html";
+        }
+
+        document.getElementById("linkTO-2024").onclick = function() {
+            window.location.href = "2024.html";
+        }
+
+        document.getElementById("boterham").onclick = function() {
+            window.location.href = "submit.html";
+        }
+
+        document.getElementById("doggo").onclick = function() {
+            let dog = document.getElementById("dogBark");
+            dog.play();
+            document.getElementById("labelDOG").innerHTML = "";
+        }
+
+    </script>
+    <script src = "main.js"></script>
+</html>
+
+
+<!-- Luke Joseph, 2025 -->

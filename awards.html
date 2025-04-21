@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Briars And Ivy</title>
+        <style>
+            h3 {
+                font-family: Montserrat;
+                text-align: center;
+                padding-left: 15%;
+                padding-right: 15%;
+            }
+            h2 {
+                text-align: center;
+                font-family: Playwrite DK Loopet, Cursive;
+            }
+
+            .award-box {
+                background-color: #e65100;
+                color: white;
+                border-radius: 15px;
+                padding: 20px;
+                margin: 10px;
+                h3 {
+                    font-family: Montserrat !important;
+                }
+                padding-bottom: 40px;
+            }
+
+            .award-box div {
+                margin-top: 0;
+                font-family: Cochin;
+                text-align: center;
+
+            }
+        </style>
+        <link href="styles.css" rel="stylesheet"></link>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    </head>
+    <body>
+        <div id="navbar"></div>
+        <div id="mobileNav"></div>
+        <div id="aardbei">
+            <div style="height:120px"></div>
+            <h1>AWARDS</h1>
+            <h3>Briars and Ivy is an award winning student run publication from Briarcliff Manor, NY<br>Below are our awards since 2014</h3>
+            <br>
+            <img src="images/briarsAndIvy_2023Awards.png" style="width:90%; margin: 0 auto; display: block;user-select:text;-webkit-user-select: text;">
+            <h3>Past Awards:</h3>
+            <div class="award-box">
+                <h3>2022</h3>
+                <div>Empire State Scholastic Press Association (ESSPA)-- Best Overall</div>
+                <div>National Scholastic Press Association (NSPA)-- All-American w/ Four Marks of Distinction</div>
+                <div>American Scholastic Press Association (ASPA)-- 1st Place</div>
+                <div>Columbia Scholastic Press Association (CSPA)-- Silver Crown Award</div>
+                <div>National Council of English Teachers (NCTE)-- Recognizing Excellence in Art and Literary Magazines Award (REALM) -- Superior</div>
+            </div>
+        
+            <div class="award-box">
+                <h3>2021</h3>
+                <div>Empire State Scholastic Press Association (ESSPA)-- Best Overall Literary Magazine</div>
+                <div>Columbia Scholastic Press Association (CSPA)-- Silver Crown Award</div>
+            </div>
+        
+            <div class="award-box">
+                <h3>2020</h3>
+                <div>National Council of Teachers of English (NCTE)'s Program to Recognize Excellence in Student Literary Magazines (PRESLM)— First Class</div>
+                <div>American Scholastic Press Association (ASPA)-- 1st Place</div>
+                <div>Columbia Scholastic Press Association (CSPA)-- Gold Medalist</div>
+                <div>National Scholastic Press Association (NSPA)-- 1st Class</div>
+                <div>Empire State Scholastic Press Association (ESSPA)-- Gold Overall</div>
+            </div>
+        
+            <div class="award-box">
+                <h3>2019</h3>
+                <div>National Council of Teachers of English (NCTE)'s Program to Recognize Excellence in Student Literary Magazines (PRESLM)— First Class</div>
+                <div>American Scholastic Press Association (ASPA)-- 1st Place</div>
+                <div>Columbia Scholastic Press Association (CSPA)-- Gold Medalist</div>
+                <div>National Scholastic Press Association (NSPA)-- 1st Class</div>
+                <div>Empire State Scholastic Press Association (ESSPA)-- Gold Overall</div>
+            </div>
+        
+            <div class="award-box">
+                <h3>2018</h3>
+                <div>National Council of Teachers of English (NCTE)'s Program to Recognize Excellence in Student Literary Magazines (REALM)—1st Place</div>
+                <div>American Scholastic Press Association (ASPA)-- 1st Place</div>
+                <div>Columbia Scholastic Press Association (CSPA)-- Gold Medalist</div>
+                <div>National Scholastic Press Association (NSPA)-- 1st Class</div>
+                <div>Empire State Scholastic Press Association (ESSPA)-- Gold Overall</div>
+            </div>
+        
+            <div class="award-box">
+                <h3>2017</h3>
+                <div>National Council of Teachers of English (NCTE)'s Program to Recognize Excellence in Student Literary Magazines (PRESLM)-- Highest Award</div>
+                <div>American Scholastic Press Association (ASPA)-- 1st Place</div>
+                <div>Columbia Scholastic Press Association (CSPA)-- Gold Medalist</div>
+                <div>National Scholastic Press Association (NSPA)-- 1st Class with one mark of distinction</div>
+                <div>Empire State Scholastic Press Association (ESSPA)-- Gold Overall</div>
+            </div>
+        
+            <div class="award-box">
+                <h3>2014</h3>
+                <div>National Council of Teachers of English (NCTE)'s Program to Recognize Excellence in Student Literary Magazines (PRESLM)-- Highest Award</div>
+                <div>American Scholastic Press Association (ASPA)-- 1st Place</div>
+                <div>Empire State Scholastic Press Association (ESSPA)-- Gold Overall</div>
+            </div>
+        </div>
+        <div id="footer"></div>
+    </body>
+    <script>
+        // If visited site never, redirect to welcome page
+        if (localStorage.getItem("visited")===null) {
+            document.getElementById("navbar").innerHTML = "<h1 style='color: white;'>Redirecting....</h1>";
+            document.getElementById("aardbei").innerHTML = "";
+            localStorage.setItem("visited", true);
+            window.location.href = "welcome.html";
+        }
+</script>
+<script src = "main.js"></script>
+</html>
