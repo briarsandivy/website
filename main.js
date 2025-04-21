@@ -37,7 +37,7 @@ document.getElementById("footer").innerHTML = `
     <div style="font-family: Cochin, Montserrat; background-color: lightGrey; 
     padding: 10px; margin-bottom: 0; margin-left: 0; margin-right: 0;">
     <h3 style="font-family: Cochin, Montserrat;">©Briars and Ivy, 2025</h3>
-    <img src="images/insta.png" style="width: 100px; display: block; margin: 0 auto;" title="Instagram"/>
+    <a href="https://www.instagram.com/bhs_briars_and_ivy/?hl=en"><img src="images/insta.png" style="width: 100px; display: block; margin: 0 auto;" title="Instagram"/></a>
     <br>
     </div>
 `
