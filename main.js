@@ -34,10 +34,12 @@ document.getElementById("mobileNav").innerHTML = `
 `
 // Adding "2" to indicate mobile since 2 same ids are not permitted
 document.getElementById("footer").innerHTML = `
-    <h3 style="font-family: Cochin, Montserrat; background-color: lightGrey; 
+    <div style="font-family: Cochin, Montserrat; background-color: lightGrey; 
     padding: 10px; margin-bottom: 0; margin-left: 0; margin-right: 0;">
-    ©Briars and Ivy, 2025 | Website design by Luke Joseph
-    </h3>
+    <h3 style="font-family: Cochin, Montserrat;">©Briars and Ivy, 2025</h3>
+    <img src="images/insta.png" style="width: 100px; display: block; margin: 0 auto;" title="Instagram"/>
+    <br>
+    </div>
 `
 
 
