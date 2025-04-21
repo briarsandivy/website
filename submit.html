@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Briars And Ivy</title>
+        <style>
+            h1 {
+                text-align: center;
+                font-size: 50px;
+                color: rgb(0, 0, 0);
+            }
+            h3 {
+                font-family: Montserrat;
+                text-align: center;
+                padding-left: 15%;
+                padding-right: 15%;
+            }
+            #dueDate {
+                font-family: Karla;
+                text-align: center;
+                background-color: rgb(107, 2, 2);
+                color: white;
+                margin-left: 30%;
+                margin-right: 30%;
+                padding: 5px;
+                border-radius: 10px;
+            }
+            #submitButton {
+                font-size: 30px;
+                font-family: Karla;
+                font-weight: 700;
+                color: white;
+                background-color: rgb(102, 126, 126);
+                padding: 10px;
+                margin-left: 25%;
+                margin-top: 30px;
+                margin-right: 25%;
+                border-radius: 15px;
+                transition: border-radius 1s, background-color 1.5s;
+                user-select: none;
+                -webkit-user-select: none;
+            }
+            #submitButton:hover {
+                border-radius: 30px;
+                background-color: rgb(66, 117, 135);
+            }
+
+            .query {
+                font-size: 30px;
+                margin: 30px;
+            }
+            .queryMini {
+                font-size: 15px;
+                margin: 30px;
+            }
+            .oui {
+                font-size: 30px;
+                color: white;
+                font-family: Montserrat;
+                font-weight: 700;
+                background-color: rgb(180, 109, 10);
+                padding: 10px;
+                margin-left: 35%;
+                margin-right: 35%;
+                border-radius: 15px;
+                transition: border-radius 1s, background-color 1.5s;
+                user-select: none;
+                -webkit-user-select: none;
+                transition: background-color 1.5s;
+            }
+            .oui:hover {
+                background-color: rgb(198, 74, 25);
+            }
+            #yay {
+                text-align: center;
+                span {
+                    font-size: 100px;
+                    -webkit-user-select: none;
+                    user-select: none;
+                }
+            }
+        </style>
+        <link href="styles.css" rel="stylesheet"></link>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    </head>
+    <body>
+        <div id="navbar"></div>
+        <div id="mobileNav"></div>
+        <div id="aardbei">
+            <div style="height:120px"></div>
+            <h1 style="font-family: Playwrite DK Loopet;">Submissions</h1>
+            <h3>Briars & Ivy offers BHS students with the opportunity to showcase their fine 
+                literary and artistic creations. We hope that you consider submitting 
+                and enriching this volume!</h3>
+            <h2 id="dueDate">Submissions end mid-April</h2>
+            <div style="height:30px;"></div>
+            <h4 style="font-family: Cochin, Montserrat; text-align: center; margin-left: 20%; margin-right: 20%; font-weight: 50;">
+                Briars & Ivy reserves the right to edit pieces, in the case of drastic cuts/edits we will contact the author<br><br>
+    The staff will title all untitled submissions<br><br>
+    Anonymous submissions will not be considered<br><br>
+    Teachers must notify students if they are submitting student’s work to the club<br><br>
+    We submit each submission to an anti-plagiarism site<br><br>
+    <strong>By submitting, the student acknowledges these rules and regulations and accepts the above terms as stated</strong>
+            </h4>
+            <h1 id="submitButton">Submit Works for 2025 -></h2>
+        </div>
+        <br>
+        <div id="footer"></div>
+    </body>
+    <script>
+        // If visited site never, redirect to welcome page
+        if (localStorage.getItem("visited")===null) {
+            document.getElementById("navbar").innerHTML = "<h1 style='color: white;'>Redirecting....</h1>";
+            document.getElementById("aardbei").innerHTML = "";
+            localStorage.setItem("visited", true);
+            window.location.href = "welcome.html";
+        }
+
+        document.getElementById("submitButton").onclick = function() {
+            document.getElementById("aardbei").innerHTML = `
+            <div style="height:120px"></div>
+            <h1 class="query">Are you a Briarcliff High School Student or Faculty Member?</h1>
+            <h3 class="queryMini">Briars & Ivy offers BHS students with the opportunity to showcase their fine literary and artistic creations. BHS faculty members can submit student works with permission.</h3>
+            <br>
+            <h3 class="oui" id="yes1">Yes</h3>
+            <h3 style="font-size: small;">This criteria is required to submit, please do not proceed if you fail to meet this criteria</h3>
+            `;
+            document.getElementById("yes1").onclick = function() {
+                document.getElementById("aardbei").innerHTML = `
+                        <div style="height:120px"></div>
+                        <h1 class="query">Is all content not written by the author cited?</h1>
+                        <h3 class="queryMini">We submit each submission to an anti-plagiarism site.</h3>
+                        <br>
+                        <h3 class="oui" id="yes2">Yes</h3>
+                        <h3 style="font-size: small;">This criteria is required to submit, please do not proceed if you fail to meet this criteria</h3>
+                        `;
+                        document.getElementById("yes2").onclick = function() {
+                            document.getElementById("aardbei").innerHTML = `
+                            <div style="height:120px"></div>
+                            <h1 class="query">If this work contains writing, is it below 1000 words?</h1>
+                            <h3 class="queryMini">Submissions above the word limit will not be considered for review. Below 750 words is ideal.</h3>
+                            <br>
+                            <h3 class="oui" id="yes3">Yes</h3>
+                            <h3 style="font-size: small;">This criteria is required to submit, please do not proceed if you fail to meet this criteria. Proceed if work does not contain written content</h3>
+                            `;
+                            document.getElementById("yes3").onclick = function() {
+                                document.getElementById("aardbei").innerHTML = `
+                                <div style="height:120px"></div>
+                                <h1 class="query">If this work will be submitted as an image, is it in JPEG format?</h1>
+                                <h3 class="queryMini">JPEG ensures the image quality of submissions.</h3>
+                                <br>
+                                <h3 class="oui" id="yes4">Yes</h3>
+                                <h3 style="font-size: small;">This criteria is required to submit, please do not proceed if you fail to meet this criteria. Proceed if work will not be submitted as an image</h3>
+                                `;
+                                document.getElementById("yes4").onclick = function() {
+                                    document.getElementById("aardbei").innerHTML = `
+                                    <div style="height:120px"></div>
+                                    <h1 class="query">Will this work be submitted with an identified author?</h1>
+                                    <h3 class="queryMini">Anonymous submissions will not be considered.</h3>
+                                    <br>
+                                    <h3 class="oui" id="yes5">Yes</h3>
+                                    <h3 style="font-size: small;">This criteria is required to submit, please do not proceed if you fail to meet this criteria</h3>
+                                    `;
+                                    document.getElementById("yes5").onclick = function() {
+                                        document.getElementById("aardbei").innerHTML = `
+                                        <div style="height:120px"></div>
+                                        <h1 class="query">You are ready to submit!</h1>
+                                        <h3 class="queryMini">Email Submissions to briarsandivy@gmail.com</h3>
+                                        <br>
+                                        <h3 style="font-size: small;">Reload page to return back<br>Direct all questions to kmmcarthy@briarcliffschools.org</h3>
+                                        <h3 id="yay"><span class="material-symbols-outlined">
+                                        celebration
+                                        </span></h3>
+                                        `;
+                                    }
+                                }
+                            }
+                }
+            }
+        }
+
+    </script>
+    <script src = "main.js"></script>
+</html>

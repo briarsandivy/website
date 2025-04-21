@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playwrite+DK+Loopet:wght@100..400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20,400,0,0&icon_names=archive,auto_stories,celebration,license,menu,publish,volume_up");
+
+h1 {
+    font-family: Montserrat;
+    font-weight: 800;
+    text-align: center;
+}
+body {
+    background-color: white;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+}
+#navbar {
+    background-color: rgb(37, 48, 119);
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 100px;
+    z-index: 1000;
+
+    img {
+        height: 100%;
+        width: auto;
+        margin-left: 30px;
+        float: left;
+        user-select: none;
+        -webkit-user-select: none;
+    }
+    h2 {
+        float: right;
+        font-size: 25px;
+        margin-top: 25px;
+        margin-bottom: 37.5px;
+        font-family: Montserrat;
+        color: white;
+        margin-right: 15px;
+        background-color: rgba(12, 12, 75, 0);
+        padding: 10px;
+        border-radius: 10px;
+        transition: background-color 0.75s;
+        user-select: none;
+        -webkit-user-select: none;
+    }
+    h2:hover {
+        background-color: rgb(3, 3, 78);
+    }
+}
+
+
+#mobileIcon {
+    visibility: collapse;
+    display: none;
+    float: right;
+    color: white;
+    padding-right: 8.5%;
+    font-size: 20px;
+    user-select: none;
+    -webkit-user-drag: none;
+}
+@media screen and (max-width: 700px) {
+    #navbar {
+        h2 {
+            visibility: collapse;
+        }
+        #mobileIcon {
+            visibility: visible;
+            display: block;
+        }
+    }
+}
+
+#mobileNav {
+    background-color: rgb(196, 52, 0);
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 100px;
+    height: 370px;
+    z-index: 1000;
+    visibility: collapse;
+    color: white;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    h2 {
+        background-color: rgb(249, 109, 16);
+        border-radius: 20px;
+        padding: 20px;
+        margin-left: 10px;
+        margin-right: 10px;
+        text-align: center;
+        font-family: Montserrat;
+        font-size: 35px;
+    }
+}
+.mobileNavON {
+    visibility: visible !important;
+}
