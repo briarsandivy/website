@@ -46,6 +46,7 @@ body {
         transition: background-color 0.75s;
         user-select: none;
         -webkit-user-select: none;
+        cursor: pointer;
     }
     h2:hover {
         background-color: rgb(3, 3, 78);
@@ -100,4 +101,8 @@ body {
 }
 .mobileNavON {
     visibility: visible !important;
+}
+
+.button {
+    cursor: pointer;
 }
