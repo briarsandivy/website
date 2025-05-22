@@ -65,7 +65,7 @@ body {
     user-select: none;
     -webkit-user-drag: none;
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 750px) {
     #navbar {
         h2 {
             visibility: collapse;
