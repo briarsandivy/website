@@ -13,7 +13,7 @@ document.getElementById("navbar").innerHTML = `
                 publish
                 </span>
             </h2>
-            <h2 id="linkTO-magazine">2024  <span class="material-symbols-outlined">
+            <h2 id="linkTO-magazine">Magazines  <span class="material-symbols-outlined">
                 auto_stories
                 </span>
             </h2>
@@ -27,7 +27,7 @@ document.getElementById("mobileNav").innerHTML = `
                 publish
                 </span>
             </h2>
-            <h2 id="linkTO-magazine2">2024  <span class="material-symbols-outlined">
+            <h2 id="linkTO-magazine2">Magazines  <span class="material-symbols-outlined">
                 auto_stories
                 </span>
             </h2>
@@ -52,7 +52,7 @@ document.getElementById("linkTO-submit").onclick = function() {
     window.location.href = "submit.html";
 }
 document.getElementById("linkTO-magazine").onclick = function() {
-    window.location.href = "2024.html";
+    window.location.href = "magazines.html";
 }
 document.getElementById("linkTO-awards").onclick = function() {
     window.location.href = "awards.html";
@@ -62,7 +62,7 @@ document.getElementById("linkTO-submit2").onclick = function() {
     window.location.href = "submit.html";
 }
 document.getElementById("linkTO-magazine2").onclick = function() {
-    window.location.href = "2024.html";
+    window.location.href = "magazines.html";
 }
 document.getElementById("linkTO-awards2").onclick = function() {
     window.location.href = "awards.html";
@@ -76,4 +76,10 @@ document.getElementById("mobileIcon").onclick = function() {
     else {
         bar.classList.add("mobileNavON");
     }
+}
+
+if (localStorage.getItem("visited")===null) {
+    document.getElementById("aardbei").innerHTML = "<h1>Redirecting...</h1>";
+    localStorage.setItem("visited", true);
+    window.location.href = "welcome2025.html";
 }
