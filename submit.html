@@ -2,6 +2,8 @@
 <html>
     <head>
         <title>Briars And Ivy</title>
+        <meta charset="UTF-8">
+
         <style>
             h1 {
                 text-align: center;
@@ -107,13 +109,6 @@
         <div id="footer"></div>
     </body>
     <script>
-        // If visited site never, redirect to welcome page
-        if (localStorage.getItem("visited")===null) {
-            document.getElementById("navbar").innerHTML = "<h1 style='color: white;'>Redirecting....</h1>";
-            document.getElementById("aardbei").innerHTML = "";
-            localStorage.setItem("visited", true);
-            window.location.href = "welcome.html";
-        }
 
         document.getElementById("submitButton").onclick = function() {
             return null;

@@ -25,6 +25,7 @@ body {
     z-index: 1000;
 
     img {
+        cursor: pointer;
         height: 100%;
         width: auto;
         margin-left: 30px;
@@ -33,6 +34,7 @@ body {
         -webkit-user-select: none;
     }
     h2 {
+        cursor: pointer;
         float: right;
         font-size: 25px;
         margin-top: 25px;
@@ -46,7 +48,6 @@ body {
         transition: background-color 0.75s;
         user-select: none;
         -webkit-user-select: none;
-        cursor: pointer;
     }
     h2:hover {
         background-color: rgb(3, 3, 78);

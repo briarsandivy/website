@@ -2,25 +2,28 @@
 <html>
     <head>
         <title>Briars And Ivy</title>
+        <meta charset="UTF-8">
+
         <style>
             h1 {
                 text-align: center;
                 font-size: 25px;
             }
-            #linkTO-2024 {
+            #linkTO-2025 {
                 font-weight: 400;
                 margin-left: 20px;
-                background-color: grey;
+                background-color: rgb(180, 89, 4);
                 color: white;
                 padding: 15px;
                 border-radius: 25px;
                 transition: 0.85s;
                 user-select: none;
                 -webkit-user-select: none;
+                cursor: pointer;
                 
             }
-            #linkTO-2024:hover {
-                background-color: rgb(187, 99, 17);
+            #linkTO-2025:hover {
+                background-color: rgb(192, 122, 56);
             }
             h3 {
                 font-family: Cochin, Montserrat;
@@ -35,21 +38,25 @@
                     
                 }
             }
-            #direct2024 {
+            #direct2025 {
                 @media screen and (max-width: 700px) {
                     font-size: 17px;
                 }
             }
-            #LXII img {
+            #LXIII {
+            background-color: rgb(48, 26, 4);
+            color: white;
+            }
+            #LXIII img {
                 margin: 0 auto;
                 display: block;
-                width: 35%;
+                width: 55%;
                 transition: width 2s;
                 user-select: none;
                 -webkit-user-select: none;
             }
-            #LXII img:hover {
-                width: 38%;
+            #LXIII img:hover {
+                width: 60%;
             }
             h2 {
                 font-family: Montserrat;
@@ -58,9 +65,9 @@
                 padding-left: 15%;
                 padding-right: 15%;
             }
-            #submit2025 {
+            #submit2026 {
                 padding: 20px;
-                background-color: rgb(209, 119, 2);
+                background-color: rgb(12, 127, 127);
                 color: white;
                 img {
                     width: 50%;
@@ -95,6 +102,54 @@
                 font-family: Montserrat;
             }
 
+            .display-end {
+                visibility: visible;
+                background-color: none;
+                display: unset !important;
+            }
+            .display-red {
+                visibility: visible;
+                background-color: red;
+                display: unset !important;
+            }
+            .display-orange {
+                visibility: visible;
+                background-color: orange;
+                display: unset !important;            
+            }
+            .display-green {
+                visibility: visible;
+                background-color: green;
+                display: unset !important;           
+             }
+            .display-pink {
+                visibility: visible;
+                background-color: rgb(207, 210, 15);
+                display: unset !important;
+            }
+            .display-purple {
+                visibility: visible;
+                background-color: purple;
+                display: unset !important;
+            }
+            #party {
+                background-color: none;
+                position: fixed;
+                top: 100px;
+                bottom: 0;
+                right: 0;
+                left: 0;
+                z-index: 1000;
+                opacity: 40%;
+                visibility: none;
+                transition: visibility 2s, background-color 1s;
+                display: none;
+            }
+
+            #doggo {
+                cursor: pointer;
+            }
+
         </style>
         <link href="styles.css" rel="stylesheet"></link>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -103,52 +158,58 @@
         <div id="navbar"></div>
         <div id="mobileNav"></div>
         <div style="height:90px"></div>
-        <div id="submit2025">
-            <h2>Volume LXII</h2>
-            <h3>will soon be released...</h3>
-            <h3 style="font-family: Montserrat; font-weight: 300;">Check back here soon!
+        <div id="party" class="null"></div>
+        <div id="LXIII">
+            <br><br>
+            <h1 id="direct2025" style="font-family: Montserrat">Volume LXIII | 2025 <span id="linkTO-2025" class="button">Visit Page -></span></h1>
+            <h3><span>The plight</span> of teenage life is hardly undocumented. Any younger sibling could tell you that
+                early on, being a “teen” denotes groans, complaints, and seemingly endless eye-rolls. Yet, Vol. LXIII
+                delves deeper. Having just turned 18 (and grown a wisdom tooth!) we can personally disclose that
+                adolescence is, above all else,  confusing. Figuring yourself out isn’t so easy when you don’t look, act, or
+                even feel like the person you’ve always been. It’s only natural to fear a reality where everything seems
+                wrong, to covet a fantasy in which the right choice exists and you know how to make it. These dreads
+                and dreams percolate inside our minds and our hearts and eventually they spill over, coloring our words,
+                actions, and selves. But from poem to painting to performance, what BHS’ fledgling artists teach us is
+                that it is when we retreat into ourselves that we can finally become acquainted with who we are. And
+                when our identity doesn’t seem so foggy, the rest of the world comes into focus.</h3>
+                <img src="images/aNULL.001.png">
+        </div>
+        <div id="submit2026">
+        <h2>Check back here soon...</h2>
+            <h3 style="font-family: Montserrat; font-weight: 300;">Check back in September for 2025-2026 submissions!
                 <br><br>
-                <img src="images/doggo.001.png" id="doggo">
-                <h4 id="labelDOG">(Click the Dog)<br><span class="material-symbols-outlined">volume_up</span></h4>
+                <img src="images/aNULL.002.png" id="doggo">
+                <h4 id="labelDOG">(Click for a suprise)<br><span class="material-symbols-outlined">volume_up</span></h4>
+
+                <audio id="partyNoise"><source src="audio/art-of-samples-cyber-hallow-free-loop-245400.mp3" type="audio/mp3"></audio>
+                <!--Sound Effect by Art-of-Samples from Pixabay-->
             </h3>
         </div>
-        <br>
-        <br>
-        <div id="LXII">
-            <h1 id="direct2024" style="font-family: Montserrat">Volume LXII | 2024 <span id="linkTO-2024" class="button">Visit Page -></span></h1>
-            <h3><span>Art</span> in its purest form, draws from the human experience. The human experience of
-                our high school artists and writers represents the culmination of growth. Every piece of art,
-                from poem to photograph to painting, comes from a teenager who is either growing up too fast
-                or not fast enough. In this magazine, we attempt to capture the essence of growth. It is a fickle
-                thing: something that disintegrates before our eyes and slips through our fingers when we hold
-                it too tight. We gain an intimate insight into the influence of childhood worldliness, memories
-                that are representative of our aspirations and a burgeoning growth that remains ubiquitous
-                throughout time. It is the unprecedented, inevitable thing that makes the human experience.
-                We, the staff of Briars and Ivy, hope that you can connect with our experiences, no matter
-                where you are on your own journey.</h3>
-                <img src="images/fallingPerson_betweenRealms.001.png">
-        </div>
-        <br>
         <div id="footer"></div>
-        <audio id="dogBark"><source src="audio/dog-bark-type-05-293289.mp3" type="audio/mp3"></audio>
-        <!--Sound Effect by Ribhav Agrawal from Pixabay-->
     </body>
     <script>
-        // If visited site never, redirect to welcome page
-        if (localStorage.getItem("visited")===null) {
-            document.getElementById("aardbei").innerHTML = "<h1>Redirecting...</h1>";
-            localStorage.setItem("visited", true);
-            window.location.href = "welcome.html";
-        }
-
-        document.getElementById("linkTO-2024").onclick = function() {
-            window.location.href = "2024.html";
+        document.getElementById("linkTO-2025").onclick = function() {
+            window.location.href = "2025.html";
         }
 
         document.getElementById("doggo").onclick = function() {
             let dog = document.getElementById("dogBark");
-            dog.play();
-            document.getElementById("labelDOG").innerHTML = "";
+            document.getElementById("partyNoise").play();
+            let partyScreen = document.getElementById("party");
+
+            partyScreen.classList.add("display-red");
+            setTimeout(function() {partyScreen.classList.remove("display-red"); 
+            partyScreen.classList.add("display-orange");}, 1000);
+            setTimeout(function() {partyScreen.classList.remove("display-orange"); 
+            partyScreen.classList.add("display-green");}, 2500);
+            setTimeout(function() {partyScreen.classList.remove("display-green"); 
+            partyScreen.classList.add("display-pink");}, 4000);
+            setTimeout(function() {partyScreen.classList.remove("display-pink"); 
+            partyScreen.classList.add("display-purple");}, 5500);
+            setTimeout(function() {partyScreen.classList.remove("display-purple"); 
+            partyScreen.classList.add("display-end");}, 7000); 
+            setTimeout(function() {partyScreen.classList.remove("display-end");}, 8000); 
+            
         }
 
     </script>

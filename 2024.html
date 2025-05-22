@@ -2,6 +2,8 @@
 <html>
     <head>
         <title>Briars And Ivy</title>
+        <meta charset="UTF-8">
+
         <style>
             body {
                 margin-left: 0px;
@@ -334,12 +336,6 @@
     </body>
     <script>
         // If visited site never, redirect to welcome page
-        if (localStorage.getItem("visited")===null) {
-            document.getElementById("navbar").innerHTML = "<h1 style='color: white;'>Redirecting....</h1>";
-            document.getElementById("aardbei").innerHTML = "";
-            localStorage.setItem("visited", true);
-            window.location.href = "welcome.html";
-        }
 
         document.getElementById("linkTO-2024").onclick = function() {
             window.location.href = "#mag";
