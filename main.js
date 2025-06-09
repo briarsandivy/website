@@ -1,4 +1,4 @@
-window.location.href = "briarsandivy.github.io";
+
 
 // By using JS to render the navbar, updates are super easy
 document.getElementById("navbar").innerHTML = `
